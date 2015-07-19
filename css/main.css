@@ -391,9 +391,14 @@ h1, h2, h3 {
     }
 
 /* ====================
-    INTERMEDIATE: Menu
+    SMALL: Menu
    ==================== */
-
+@media only screen and (max-width: 364px) {
+	nav a {
+		width: 9%;
+		font-size: 12px
+	}
+}
 
 /* ========================
     INTERMEDIATE: IE Fixes

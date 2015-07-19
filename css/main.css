@@ -25,23 +25,6 @@ html {
     line-height: 1.4;
 }
 
-::-moz-selection {
-    background: #000;
-    text-shadow: none;
-}
-
-::selection {
-    background: #000;
-    text-shadow: none;
-}
-
-hr {
-    display: block;
-    height: 1px;
-    margin: 1em 0;
-    padding: 0;
-}
-
 audio,
 canvas,
 iframe,
@@ -49,22 +32,6 @@ img,
 svg,
 video {
     vertical-align: middle
-}
-
-fieldset {
-    margin: 0;
-    padding: 0;
-}
-
-textarea {
-    resize: vertical;
-}
-
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #fff;
-    color: #000;
-    padding: 0.2em 0;
 }
 
 
@@ -88,13 +55,6 @@ body {
 /* ===================
     ALL: Greyscale Theme
    =================== */
-.box-shadow:after {
-    z-index: -1;
-    -webkit-box-shadow: 0px 0px 8px 2px #000000;
-       -moz-box-shadow: 0px 0px 8px 2px #000000;
-            box-shadow: 0px 0px 8px 2px #000000;
-}
-
 
 .footer-container {
     background-color: #fff;
@@ -160,9 +120,6 @@ nav a:hover {
     padding: 30px 0;
 }
 
-.main article h1 {
-    font-size: 2em;
-}
 
 .main aside {
     color: #000;
@@ -185,7 +142,6 @@ nav a:hover {
 /* ===============
     ALL: IE Fixes
    =============== */
-   file://PATH-TO/beige001.jpg
 .ie7 .title {
     padding-top: 20px;
 }
@@ -284,10 +240,6 @@ h1, h2, h3 {
     background-position: 55% 0%
 }
 
-
-#address {
-	float: right;
-}
 
     #google-maps {
         position: relative;
@@ -447,48 +399,7 @@ h1, h2, h3 {
     INTERMEDIATE: IE Fixes
    ======================== */
 
-    nav ul li {
-        display: inline
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%
-    }
-}
-
-@media only screen and (min-width: 768px) {
-
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-	.head-container {
-		margin-top: 5px;
-		padding-bottom: 5px;
-	}
-
-/* ============
-    WIDE: Menu
-   ============ */ 
-	
-	nav {
-		margin-bottom: 5px;
-	}
-
-/* ============
-    WIDE: Main
-   ============ */
-
-    .main article {
-        float: left;
-        width: 57%
-    }
-
-    .main aside {
-        float: right;
-        width: 35%;
-		padding: 1%
-    }
-}
+  
 
 @media only screen and (min-width: 1140px) {
 
@@ -505,35 +416,10 @@ h1, h2, h3 {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
-.hidden {
-    display: none !important;
-    visibility: hidden
+#front-img {
+	margin: 0 auto;
 }
 
-.visuallyhidden {
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto
-}
-
-.invisible {
-    visibility: hidden
-}
 
 .clearfix:before,
 .clearfix:after {
@@ -577,23 +463,13 @@ h1, h2, h3 {
         content: " (" attr(href) ")"
     }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")"
-    }
 
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: ""
     }
 
-    pre,
-    blockquote {
-        page-break-inside: avoid
-    }
-
-    thead {
-        display: table-header-group
-    }
+  
 
     tr,
     img {

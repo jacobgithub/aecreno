@@ -266,14 +266,15 @@ h1, h2, h3 {
 }
 
 #hours {
-	float: left;
-}
-
-#location {
 	float: right;
 }
 
-#title, #navigation {
+#location {
+	float: left;
+	text-align: left
+}
+
+#title {
 	width: 100%;
 	margin: 0 auto;
 	background-color: #fff;
@@ -426,30 +427,21 @@ h1, h2, h3 {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-
-@media only screen and (min-width: 480px) {
-
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
-
-    nav a {
+  nav a {
         float: left;
-        width: 23%;
-        margin-right: 10px;
+		width: 22%;
+        margin: 1px 3px auto;
         margin-bottom: 5px;
+		padding: 2px;
 		-webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
 		-moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
 		box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75)
     }
 
-    nav li:first-child a {
-        margin-left: 0
-    }
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
 
-    nav li:last-child a {
-        margin-right: 0
-    }
 
 /* ========================
     INTERMEDIATE: IE Fixes
